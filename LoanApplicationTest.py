@@ -21,7 +21,7 @@ from skmultiflow.drift_detection import ADWIN, PageHinkley
 @click.option('-l', '--decay_lambda', default=0.25, show_default=True, is_flag=False, flag_value=0.25, help='Decaying lambda for the older traces when performing a pruning step.')
 @click.option('-n', '--noise', default=1, show_default=True, is_flag=False, flag_value=1, help='Noise filter applied to relations and activities which have a frequency below certain threshold.')
 @click.option('-w', '--window_size', default=10, show_default=True, is_flag=False, flag_value=10, help='Maximum size of the window of detection (maxWindowSize)')
-@click.option('-t', 'tree_size', default=1000, show_default=True, is_flag=False, flag_value=1000, help='Maximum size of the trees (pruningSteps)')
+@click.option('-t', '--tree_size', default=1000, show_default=True, is_flag=False, flag_value=1000, help='Maximum size of the trees (pruningSteps)')
 @click.option('-c', "--config", default=False, show_default=True, is_flag=False, flag_value=False, help='(True/False) Configuration for generating sub-logs from the drifts identified')
 @click.option('-f', '--file', help='Path to the XES log file.')
 def main(config, file, window_size, tree_size, decay_lambda, noise):
