@@ -57,7 +57,7 @@ class Window:
                 eventsSeen = W0[-1].eventsSeen
                 criticalNodes = [x for x in treeDistance.notInterDict if x[1] >= 300]
                 drift = Drift(referenceWinNumberOfEvents, testWinNumberOfEvents, Window0, Window1, treeDistance, eventsSeen, criticalNodes)
-                self.driftsIdentified.append(drift)
+                self.driftsIdentified.append(drift) 
                 print("ADWIN change detected at: " + str(drift.eventsSeen) + " events\n"
                         "Reference window size: " + str(drift.refWinSize) + "events\n"
                         "Test window size: " + str(drift.testWinSize) + "events\n"
