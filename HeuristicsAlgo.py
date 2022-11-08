@@ -175,7 +175,7 @@ def modelNet(tree):
     tree - The Prefix Tree which stores all events and frequencies
     """
 
-    direcFoll = directlyFollows(settings.FBold, tree.TPO)
+    direcFoll = directlyFollows(settings.FBold, tree.TPO) 
 
     # settings.startActiv = {k[1]: v for k, v in direcFoll.items() if 'START' in k}
     # settings.endActiv = {k[0]: v for k, v in direcFoll.items() if 'END' in k}
