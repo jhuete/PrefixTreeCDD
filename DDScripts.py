@@ -20,7 +20,7 @@ def driftDetectionADWIM(adwin, metric, Window, indexSlider):
         if metric >= adwinBeforeMetric.estimation:
             Window.prefixTreeList = deque(islice(Window.prefixTreeList, indexSlider, None))
             Window.WinSize = len(Window.prefixTreeList) + 1  # We decrease the Max Size of the window to perform CDD more frequently, as we recently had a drift
-            indexSlider = 1  # Reset the slider to perform the drift detection over the remaining trees in the list
+            indexSlider = 1  # Reset the slider to perform the drift detection over the remaining trees in the list 
             Window.cddFlag = True
         else:
             indexSlider += 1  # Increase the slider to include the next tree as a reference tree in W0
