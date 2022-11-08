@@ -170,5 +170,5 @@ dependencies:
     - threadpoolctl==2.1.0
     - tqdm==4.54.1
     - tzlocal==2.1
-prefix: C:\Users\a0081\anaconda3\envs\streamPM
+prefix: streamPM
 
