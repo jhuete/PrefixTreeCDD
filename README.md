@@ -46,7 +46,7 @@ Options:
 ```
 
 ## Usage
-All libraries must be installed from either the requirements.txt or requirements.yml file on your environment.
+All libraries must be installed from either the requirements.txt or requirements.yml file on your environment. If using Mac or Linux machine, the versions of the libraries may cause an issue. Make sure to install without version specification.
 
 ```text
 python BPIC_CDD.py -f path-to-log-file
