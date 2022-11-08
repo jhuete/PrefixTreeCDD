@@ -97,7 +97,7 @@ class PrefixTree:
         window.cddFlag = False  # We don't want CDD until we finish processing a complete tree
         caseID = ev["case:concept:name"]  # Case ID from the trace attributes
         eventID = ev["concept:name"] # Event ID from the event attributes
-        eventTimestamp = ev["time:timestamp"]
+        eventTimestamp = ev["time:timestamp"] 
         if caseID not in caseList: # If it is a new case that has never been seen before
             current = self.root
             Dcase[caseID] = Case(caseID, current)  # Instance of the Case object for the dictionary
